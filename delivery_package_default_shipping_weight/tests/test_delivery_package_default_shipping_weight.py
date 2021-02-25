@@ -29,7 +29,7 @@ class TestDeliveryPackageDefaultShippingWeight(SavepointCase):
         )
         move_line = fields.first(picking.move_line_ids_without_package)
         move_line.qty_done = move_line.product_uom_qty
-        picking.put_in_pack()
+        picking.action_put_in_pack()
         package = move_line.result_package_id
         self.assertAlmostEqual(package.shipping_weight, 0.0)
         package.packaging_id = self.packaging
