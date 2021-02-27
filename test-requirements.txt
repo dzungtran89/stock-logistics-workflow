@@ -1,0 +1,1 @@
+odoo14-addon-stock-putaway-hook @git+https://github.com/akretion/stock-logistics-workflow@14.0-mig-stock_putaway_hook#subdirectory=setup/stock_putaway_hook
